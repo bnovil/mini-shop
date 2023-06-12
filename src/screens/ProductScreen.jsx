@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const HomeScreen = ({ history }) => {
-    return (
-        <div>
-            <h1> product </h1>
-        </div>
-    )
-}
+const ProductScreen = ({ history }) => {
+  return (
+    <div>
+      <h1> product </h1>
+    </div>
+  );
+};
 
-export default HomeScreen;
+export default ProductScreen;
