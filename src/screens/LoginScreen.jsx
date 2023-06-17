@@ -1,6 +1,10 @@
-import FormContainer from "../components/FromContainer";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Form, Button, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import Message from "../components/Message";
+import Loader from "../components/Loader";
+import FormContainer from "../components/FormContainer";
 import { login } from "../actions/userActions";
 
 const LoginScreen = ({ location, history }) => {
@@ -20,7 +24,7 @@ const LoginScreen = ({ location, history }) => {
     }
   }, [history, userInfo, redirect]);
 
-  const summitHandler = (e) => {
+  const submitHandler = (e) => {
     e.preventDefault();
     dispatch(login(email, password));
   };
@@ -66,3 +70,5 @@ const LoginScreen = ({ location, history }) => {
     </FormContainer>
   );
 };
+
+export default LoginScreen;
