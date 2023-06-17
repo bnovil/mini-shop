@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { Row, Col } from "react-bootstrap";
 import Product from "../components/Product";
 import Message from "../components/Message";
@@ -11,14 +11,14 @@ import Meta from "../components/Meta";
 import { listProducts } from "../actions/productActions";
 
 const HomeScreen = ({ match }) => {
-  //  get params
   const keyword = match.params.keyword;
+
   const pageNumber = match.params.pageNumber || 1;
 
-  const productlist = useSelector((state) => state.productList);
-  const { loading, error, products, page, pages } = productlist;
-
   const dispatch = useDispatch();
+
+  const productList = useSelector((state) => state.productList);
+  const { loading, error, products, page, pages } = productList;
 
   useEffect(() => {
     dispatch(listProducts(keyword, pageNumber));
