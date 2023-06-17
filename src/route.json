@@ -1,0 +1,5 @@
+{
+    "/api/products/top/": "/api_products_top",
+    "/api/products?keyword=&pageNumber=1": "/product_page",
+    "/api/products/62af08699d125036dbdf371c": "/62af08699d125036dbdf371c"
+}
