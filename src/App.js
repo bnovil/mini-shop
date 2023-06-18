@@ -1,17 +1,17 @@
-import { BrowserRouter, Route } from "react-router-dom";
-import { Container } from "react-bootstrap";
-import HomeScreen from "./screens/HomeScreen";
-import ProductScreen from "./screens/ProductScreen";
-import Header from "./components/Header";
-import OrderScreen from "screens/OrderScreen";
-import ShippingScreen from "screens/ShippingScreen";
-import PaymentScreen from "screens/PaymentScreen";
-import PlaceOrderScreen from "screens/PlaceOrderScreen";
-import LoginScreen from "./screens/LoginScreen";
-import RegisterScreen from "screens/RegisterScreen";
-import ProfileScreen from "screens/ProfileScreen";
-import CartScreen from "screens/CartScreen";
 import Footer from "components/Footer";
+import { Container } from "react-bootstrap";
+import { BrowserRouter, Route } from "react-router-dom";
+import CartScreen from "./screens/CartScreen";
+import OrderScreen from "./screens/OrderScreen";
+import PaymentScreen from "./screens/PaymentScreen";
+import PlaceOrderScreen from "./screens/PlaceOrderScreen";
+import ProfileScreen from "./screens/ProfileScreen";
+import RegisterScreen from "./screens/RegisterScreen";
+import ShippingScreen from "./screens/ShippingScreen";
+import Header from "./components/Header";
+import HomeScreen from "./screens/HomeScreen";
+import LoginScreen from "./screens/LoginScreen";
+import ProductScreen from "./screens/ProductScreen";
 
 const App = () => {
   return (
