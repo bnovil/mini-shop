@@ -10,7 +10,7 @@ import PlaceOrderScreen from "screens/PlaceOrderScreen";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "screens/RegisterScreen";
 import ProfileScreen from "screens/ProfileScreen";
-import CartScreen from "./screens/CartScreen";
+import CartScreen from "screens/CartScreen";
 import Footer from "components/Footer";
 
 const App = () => {
